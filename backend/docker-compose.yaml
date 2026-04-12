@@ -2,11 +2,11 @@
 services:
   postgres:
     image: postgres:15
-    container_name: landmark-postgres
+    container_name: park24-postgres
     environment:
-      POSTGRES_DB: landmark
-      POSTGRES_USER: landmark_user
-      POSTGRES_PASSWORD: landmark_pass
+      POSTGRES_DB: park24
+      POSTGRES_USER: park24_user
+      POSTGRES_PASSWORD: park24_pass
     ports:
       - "5432:5432"
     volumes:
@@ -14,19 +14,19 @@ services:
 
   # redis:
   #   image: redis:7-alpine
-  #   container_name: landmark-redis
+  #   container_name: park24-redis
   #   ports:
   #     - "6379:6379"
 
   # zookeeper:
   #   image: confluentinc/cp-zookeeper:7.5.0
-  #   container_name: landmark-zookeeper
+  #   container_name: park24-zookeeper
   #   environment:
   #     ZOOKEEPER_CLIENT_PORT: 2181
 
   # kafka:
   #   image: confluentinc/cp-kafka:7.5.0
-  #   container_name: landmark-kafka
+  #   container_name: park24-kafka
   #   depends_on:
   #     - zookeeper
   #   ports:
@@ -40,9 +40,9 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: landmark-pgadmin
+    container_name: park24-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@landmark.com
+      PGADMIN_DEFAULT_EMAIL: admin@park24.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "5050:80"

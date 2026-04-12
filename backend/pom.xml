@@ -10,11 +10,11 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.landmark</groupId>
-	<artifactId>landmark-backend</artifactId>
+	<groupId>com.park24</groupId>
+	<artifactId>park24-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>landmark-backend</name>
-	<description>Payment Gateway and wallet System</description>
+	<name>park24-backend</name>
+	<description>Parking System</description>
 
 	<properties>
 		<spring-modulith.version>1.2.4</spring-modulith.version>
@@ -109,7 +109,7 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.awspring.cloud</groupId>
 			<artifactId>spring-cloud-aws-starter-s3</artifactId>

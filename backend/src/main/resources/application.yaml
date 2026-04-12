@@ -1,13 +1,13 @@
 spring:
   application:
-    name: landmark-backend
+    name: park24-backend
   profiles:
     active: local  
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/landmark
-    username: landmark_user
-    password: landmark_pass
+    url: jdbc:postgresql://localhost:5432/park24
+    username: park24_user
+    password: park24_pass
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -44,12 +44,12 @@ spring:
   #     key-serializer: org.apache.kafka.common.serialization.StringSerializer
   #     value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   #   consumer:
-  #     group-id: landmark-group
+  #     group-id: park24-group
   #     auto-offset-reset: earliest
   #     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
   #     value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
   #     properties:
-  #       spring.json.trusted.packages: "com.landmark.shared.event"
+  #       spring.json.trusted.packages: "com.park24.shared.event"
 
 server:
   port: 8080
@@ -67,7 +67,7 @@ jwt:
 
 logging:
   level:
-    com.landmark: DEBUG
+    com.park24: DEBUG
     # com.flyway-db: INFO
     # org.springframework.kafka: INFO
 
