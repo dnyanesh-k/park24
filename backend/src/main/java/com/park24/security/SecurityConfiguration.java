@@ -56,7 +56,7 @@ public class SecurityConfiguration {
                 .requestMatchers("/api/v1/auth/login").permitAll()
 
                 // If properties should be public keep this
-                .requestMatchers("/api/v1/properties/**").permitAll()
+                .requestMatchers("/api/v1/parking/**").permitAll()
 
                 .requestMatchers("/error").permitAll()
 

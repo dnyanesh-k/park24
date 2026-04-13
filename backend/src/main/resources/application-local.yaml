@@ -14,8 +14,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/park24
-    username: park24_user
-    password: park24_pass
+    username: postgres
+    password: root
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -63,7 +63,7 @@ server:
   port: 8080
 
 jwt:
-  secret: your secret
+  secret: ahgvasdchbalcaufhbvkjancucfdehwe8r84r4fjbvew
   expiry-ms: 3600000        # 1 hour
   refresh-expiry-ms: 86400000  # 24 hours
 

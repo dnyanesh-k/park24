@@ -2,6 +2,8 @@ package com.park24.parking.entity;
 
 import javax.annotation.processing.Generated;
 
+import com.park24.parking.enums.VehicleType;
+
 import jakarta.persistence.*;
 import lombok.*;
 

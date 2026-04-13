@@ -28,15 +28,15 @@ public class CustomUserDetailsService implements UserDetailsService {
                         new UsernameNotFoundException(
                                 "User not found with phone: " + phoneNumber));
 
-        return org.springframework.security.core.userdetails.User
-                .builder()
-                .username(user.getPhoneNumber())
-                .password(user.getPasswordHash())
-                .authorities(
-                        List.of(new SimpleGrantedAuthority(
+        return new CustomUserDetails(
+                user.getId(), // ✅ critical: needed for ownerId
+                user.getPhoneNumber(),
+                user.getPasswordHash(),
+                List.of(
+                        new SimpleGrantedAuthority(
                                 "ROLE_" + user.getRole().name()
-                        ))
+                        )
                 )
-                .build();
+        );
     }
 }

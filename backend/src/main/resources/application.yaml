@@ -6,13 +6,13 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/park24
-    username: park24_user
-    password: park24_pass
+    username: postgres
+    password: root
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: create        # Flyway handles schema, not Hibernate
+      ddl-auto: update        # Flyway handles schema, not Hibernate
     show-sql: false
     properties:
       hibernate:
@@ -55,7 +55,7 @@ server:
   port: 8080
 
 jwt:
-  secret: 
+  secret: ahgvasdchbalcaufhbvkjancucfdehwe8r84r4fjbvew
   expiry-ms: 3600000        # 1 hour
   refresh-expiry-ms: 86400000  # 24 hours
 

@@ -3,7 +3,7 @@ package com.park24.parking.dto;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import com.park24.parking.entity.SessionStatus;
+import com.park24.parking.enums.SessionStatus;
 import com.park24.parking.enums.VehicleType;
 
 public class ParkingSessionResponseDTO {
